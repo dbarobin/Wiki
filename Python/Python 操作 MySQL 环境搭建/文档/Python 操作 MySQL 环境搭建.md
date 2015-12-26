@@ -59,5 +59,7 @@ python setup.py install
 
 ## 0x02 说明
 
+软件下载点击：[本文档涉及软件下载地址](https://github.com/dbarobin/Wiki/tree/master/Python/Python%20%E6%93%8D%E4%BD%9C%20MySQL%20%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/%E8%BD%AF%E4%BB%B6)
+
 Enjoy!
 2015.12.26, By Robin Wen.
