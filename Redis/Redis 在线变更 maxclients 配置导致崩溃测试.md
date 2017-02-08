@@ -21,6 +21,7 @@
 ## 四 参考
 
 * [redis crash under the add maxclients](https://github.com/antirez/redis/issues/3412)
+* [CONFIG SET maxclients](https://github.com/antirez/redis/issues/464)
 
 ## 五 结论
 
