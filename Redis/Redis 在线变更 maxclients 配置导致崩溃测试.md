@@ -37,9 +37,10 @@ bulk_insert.sh
 
 ``` bash
 #!/bin/bash
-for ((i=0;i<3000000;i++))
+
+for ((i = 0; i < 3000000; i++))
 do
-echo -en "helloworld" | /usr/local/redis/bin/2.8.6/redis-cli -h 127.0.0.1 -p 6379 -x set name$i >> redis.log
+   echo -en "helloworld" | /usr/local/redis/bin/2.8.6/redis-cli -h 127.0.0.1 -p 6379 -x set name$i >> redis.log
 done
 ```
 
@@ -49,7 +50,8 @@ link_redis.php
 
 ``` php
 <?php
-    set_time_limit (0);
+    set_time_limit(0);
+
     $redis = new redis();
     $redis->pconnect('127.0.0.1', 6379);
     sleep(100);
@@ -60,9 +62,9 @@ max_redis.php
 
 ``` php
 <?php
-	set_time_limit (0);
+	set_time_limit(0);
 
-	for($i=1;$i<=1050;$i++){
+	for($i = 1; $i <= 1050; $i++){
     	exec("nohup php /data/tmp/link_redis.php > /dev/null &");
 	}
 ?>
@@ -77,7 +79,7 @@ pidfile /var/run/redis6379.pid
 
 port 6379
 
-bind 127.0.0.1 10.4.4.233
+bind 127.0.0.1
 
 timeout 300
 
@@ -90,9 +92,9 @@ logfile /data/redis/6379/log/redis6379.log
 
 databases 16
 
-#save 900 1
-#save 300 10
-#save 60 10000
+save 900 1
+save 300 10
+save 60 10000
 
 maxmemory 1073741824
 maxmemory-policy volatile-lru
