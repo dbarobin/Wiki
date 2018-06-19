@@ -30,7 +30,7 @@ None.
 
 ## Contact
 
-dbarobinwen@gmail.com
+blockxyz@gmail.com
 
 ## License
 
